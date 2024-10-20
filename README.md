@@ -1,5 +1,7 @@
 # GuardianVision
 
+![GuardianVision Logo](assets/logo2.png)
+
 ## Overview
 **GuardianVision** is a real-time crime detection system that leverages advanced AI techniques, including SlowFast networks and Convolutional Neural Networks (CNN), to analyze video footage for identifying and classifying various criminal activities. The system is designed to enhance public safety and provide timely alerts to law enforcement agencies.
 
