@@ -169,14 +169,14 @@ def video_analysis():
         if os.path.exists(output_video_path):
             st.success("Video processed successfully!")
             st.video(output_video_path)
-            st.write(f"Predicted Crime: {predicted_crime}")
+            # st.write(f"Predicted Crime: {predicted_crime}")
 
             # Download button
             with open(output_video_path, 'rb') as f:
                 st.download_button('Download Processed Video', f, file_name='predicted_video.mp4')
-            if predicted_crime != "Normal":
-                # Display final message
-                st.markdown("### :rotating_light: Crime detected! Video sent to police! :police_car:")
+
+            # Display final message
+            st.markdown("### :rotating_light: Crime detected! Video sent to police! :police_car:")
         else:
             st.error(f"Error: Output video not found at {output_video_path}")
 
